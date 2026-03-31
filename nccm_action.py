@@ -24,7 +24,7 @@ from wx import PyEventBinder
 
 from nccm_gui import NetClassClearanceMatrixDialog, InfoDialog
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __author__ = "Yiannis Michael (ymic9963)"
 __license__ = "GNU General Public License v3.0 only"
 
@@ -123,11 +123,7 @@ class NetClassClearanceMatrix(NetClassClearanceMatrixDialog):
                 for val, _ in self.class_val_dict.items():
                     if val == (col, row):
                         value_float = reg_float.findall(self.class_val_dict[(col, row)])
-                        self.gridNCCM.SetCellValue(
-                            (c, r), value_float[0] + " mm"
-                        )
-
-
+                        self.gridNCCM.SetCellValue((c, r), value_float[0] + " mm")
 
         self.refresh_sizes()
 
@@ -243,7 +239,6 @@ class NetClassClearanceMatrix(NetClassClearanceMatrixDialog):
 
         # Add padding (e.g., 10 pixels)
         self.gridNCCM.SetRowLabelSize(max_width + 10)
-
 
     def refresh_sizes(self):
         """Refresh the window when new data is added to the matrix"""
