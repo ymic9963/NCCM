@@ -8,13 +8,13 @@
     "author": {
         "name": "Yiannis Michael",
         "contact": {
-            "web": "https://github.com/ymich9963"
+            "web": "https://github.com/ymic9963"
         }
     },
     "maintainer": {
         "name": "Yiannis Michael",
         "contact": {
-            "web": "https://github.com/ymich9963"
+            "web": "https://github.com/ymic9963"
         }
     },
     "license": "GPL-3.0",
@@ -23,7 +23,7 @@
     },
     "versions": [
         {
-            "version": "0.1",
+            "version": "0.1.2",
             "status": "stable",
             "kicad_version": "9.0",
             "runtime": "ipc"
